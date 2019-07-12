@@ -1,0 +1,54 @@
+.parallax{
+    background-size:cover !important;
+    background-repeat:no-repeat;
+    position:center;
+    padding-top:0%;
+    overflow:hidden;
+    height: 820px;
+    width :100%;
+    padding-top:2%;
+    }
+
+.body{
+    background:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+
+.section{
+        padding:6.5em 0 4em 0;
+        }
+
+
+.card-deck{
+   margin-top: 5%;
+   position:relative;
+   margin-left: 50px;
+   margin-right: 50px;
+   color: #ff569c;
+        }
+        
+.skills{
+    margin-top: 5%;
+    position:relative;
+    margin-left: 100px;
+    margin-right: 50px;
+    /* color: #ff8800; */
+
+}
+
+.otra{
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 5%;
+    position:center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ff8800;
+
+
+}
+
+
+
+

@@ -1,20 +1,448 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+  
+
+
+
+<!--Main Navigation--> 
+ <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+          <a class="navbar-brand" href="#"><strong>Kevin Lopez / Web Developer</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll href="#card-deck">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-scroll  href="#about">About me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="far fa-paper-plane"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      
+      </header> 
+      <!--Main Navigation-->
+      
+      
+      
+      
+      <body>
+      
+      <!-- parallax -->
+
+      <div class="parallax">
+      <div class="view intro" style="background-image: url(assets/img/fondo4.png); background-attachment: fixed; height: 1200px;">
+        <!-- <div class="unique-color"> -->
+            <div class="container">
+                <div class="d-flex align-items-center d-flex justify-content-center" style="height: 1200px">
+                  <div class="row mt-5">
+                  <div class="col-md-12 wow fadeIn mb-3">
+                    <div class="intro-info-content text-center">
+                          <h2 class="h1 display-1 mb-2 wow fadeInDown" data-wow-delay="0.3s">Kevin<a class="indigo-text font-bold">Lopez</a></h2>
+                          <h5 class="font-up mb-3 mt-1 font-bold wow fadeIn" data-wow-delay="0.4s">Web developer & Graphic designer</h5>
+                          <a mdbBtn color="light-blue" size="lg" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s"  data-scroll  href="#card-deck">portfolio</a>
+                          <a mdbBtn color="light-blue" size="lg" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s" data-scroll  href="#skills">Skills</a>
+
+                          <a mdbBtn color="indigo" size="lg" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s"  data-scroll  href="#aboutme">About me</a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+      </div>
+      </div>
+    <!-- </div> -->
+      
+
+
+    <!-- portafolio -->
+    <!-- card -->
+     <section>
+        
+            
+     <div class="card-deck" id="card-deck">
+        <!-- <h1>Portafolio</h1> -->
+        <h2 class="h1 font-bold light-blue-text my-5">Portafolio</h2>
+        <div class="row text-left">
+      
+      <mdb-card>
+        <div class="view overlay waves-light" mdbWavesEffect>
+          <!-- Card img -->
+          <mdb-card-img src="assets/img/raices.png" alt="Card image cap"></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <mdb-card-body>
+          <!--Title-->
+          <mdb-card-title>
+            <h4>Raices del campo (prototipo angular6)</h4>
+          </mdb-card-title>
+    
+          <!--Text-->
+          <mdb-card-text> Desarrollo web para empresa Raices del campo la cual se dedica a la 
+            fabricacion de productos naturales.
+          </mdb-card-text>
+    
+          <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+        </mdb-card-body>
+      </mdb-card>
+    
+      <!-- Card -->
+      <mdb-card>
+        <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+          <!-- Card img -->
+          <mdb-card-img src="assets/img/frontend-insertcoinz.png" alt="Card image cap"></mdb-card-img>
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <mdb-card-body>
+          <!--Title-->
+          <mdb-card-title>
+            <h4>Insert coinz</h4>
+          </mdb-card-title>
+    
+          <!--Text-->
+          <mdb-card-text> Desarrollo web para Grupo musical de Hip Hop español el cual lanzaron un nuevo disco el cual esta disponible en el sitio web.  
+          </mdb-card-text>
+    
+          <a href="https://insertcoinz.net/" mdbBtn color="primary" mdbWavesEffect>Button</a>
+        </mdb-card-body>
+      </mdb-card>
+    
+      <!-- Card -->
+      <mdb-card>
+        <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+          <!-- Card img -->
+          <mdb-card-img src="assets/img/raicesdelcampo1.png" alt="Card image cap"></mdb-card-img>
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <mdb-card-body>
+          <!--Title-->
+          <mdb-card-title>
+            <h4>Raices del campo</h4>
+          </mdb-card-title>
+    
+          <!--Text-->
+          <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+          </mdb-card-text>
+    
+          <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+    </div>
+  </section>
+
+
+   <!-- about me -->
+   
+   
+       <mdb-card cascade="true" wider="true" reverse="true" class="my-4">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect id="aboutme">
+            <mdb-card-img src="assets/img/code.jpg"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+        
+          <!-- Card content -->
+          <div class="about" id="about">
+            </div>
+           
+         
+          <mdb-card-body cascade="true" class="text-center">
+        
+            <!--Title-->
+            <mdb-card-title>
+              <h4>
+                <strong>About me</strong>
+              </h4>
+            </mdb-card-title>
+        
+            <h5 class="indigo-text">
+              <strong>Kevin Lopez / Developer Web</strong>
+            </h5>
+        
+            <mdb-card-text>
+               <h4>Egresado de Técnico en Programación y Análisis de Sistemas, cursando actualmente Ingeniería de Ejecución en 
+                Informática Mención Desarrollo de Sistemas. Trabajando con tecnologías actuales de
+                 FrontEnd, diseño UX, Angular, HTML5, CSS. Ganas de crear y aportar mis habilidades.</h4>
+            </mdb-card-text>
+        
+            <!--Linkedin-->
+            <a class="icons-sm li-ic">
+              <i class="fab fa-linkedin-in px-2"> </i>
+            </a>
+            <!--Twitter-->
+            <a class="icons-sm tw-ic">
+              <i class="fab fa-twitter px-2"> </i>
+            </a>
+            <!--Dribbble-->
+            <a class="icons-sm fb-ic">
+              <i class="fab fa-facebook-f px-2"> </i>
+            </a>
+          
+          </mdb-card-body>
+          
+        
+        </mdb-card>
+        
+
+
+
+    <!-- skills -->
+      
+      <!--Grid row-->
+      <section>
+      
+        
+          
+        <div class="skills" id="skills">
+          <h2 class="h1 font-bold light-blue-text my-5">Skills</h2>
+          
+    <div class="row text-left">
+      
+    
+      <!--Grid column-->
+      <div class="col-md-6 mb-4 wow fadeIn">
+          <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-html5 red-text fa-4x"></i>
+          </div>
+          <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Html 5</h4>
+              <p class="grey-text">
+                  HTML 5 (formerly spelled HTML5) is a markup language used for structuring and presenting
+                  content on the World Wide Web. It is the fifth and current major version of the HTML standard,
+                   and subsumes XHTML.
+              </p>
+              <a mdbBtn color="primary" size="sm" href="https://es.wikipedia.org/wiki/HTML5" target="_blank" class="ml-0 waves-light" mdbWavesEffect>Learn more</a>
+          </div>
+      </div>
+      <!--Grid column-->
+    
+    
+      
+      <!--Grid column-->
+          <div class="col-md-6 mb-4 wow fadeIn">
+          <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-angular red-text fa-4x"></i>
+          </div>
+          <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Angular</h4>
+              <p class="grey-text">
+                  Angular (commonly called "Angular 2+" or "Angular 2"),
+                  is a framework for web applications developed in TypeScript ,
+                  open source , maintained by Google ,
+                  which is used to create and maintain web applications on a single page .
+              </p>
+              <a mdbBtn color="primary" href="https://angular.io/" target="_blank" size="sm" class="ml-0 waves-light" mdbWavesEffect>Learn more</a>
+          </div>
+      </div>
+      
+
+       <!--Grid column-->
+       <div class="col-md-6 mb-4 wow fadeIn">
+          <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-js-square yellow-text fa-4x"></i>
+          </div>
+          <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">JavaScript</h4>
+              <p class="grey-text">CSS (acronym in English for C ascading S tyle S heets),
+                "Cascading Style Sheets", is a graphic design language to define and create the presentation
+                of a structured document written in a markup language . </p>
+              <a mdbBtn color="primary" size="sm" class="ml-0 waves-light" href="https://www.javascript.com/" target="_blank" mdbWavesEffect>Learn more</a>
+          </div>
+      </div>
+      
+  <!--Grid column-->
+  <div class="col-md-6 mb-4 wow fadeIn">
+      <div class="col-1 col-md-2 float-left">
+          <i class="fab fa-css3 blue-text fa-4x"></i>
+      </div>
+      <div class="col-10 col-md-9 col-lg-10 float-right">
+          <h4 class="font-weight-bold">CSS 3</h4>
+          <p class="grey-text">CSS (acronym in English for C ascading S tyle S heets),
+            "Cascading Style Sheets", is a graphic design language to define and create the presentation
+            of a structured document written in a markup language . </p>
+          <a mdbBtn color="primary" size="sm" class="ml-0 waves-light" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank" mdbWavesEffect>Learn more</a>
+      </div>
+  </div>
+
+
+        <!--Grid column-->
+      <div class="col-md-6 mb-4 wow fadeIn">
+          <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-node-js green-text fa-4x"></i>
+          </div>
+          <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Node js</h4>
+              <p class="grey-text">CSS (acronym in English for C ascading S tyle S heets),
+                "Cascading Style Sheets", is a graphic design language to define and create the presentation
+                of a structured document written in a markup language . </p>
+              <a mdbBtn color="primary" size="sm" class="ml-0 waves-light" href="https://nodejs.org/es/" target="_blank" mdbWavesEffect>Learn more</a>
+          </div>
+      </div>
+      
+       <!--Grid column-->
+       <div class="col-md-6 mb-4 wow fadeIn">
+          <div class="col-1 col-md-2 float-left">
+              <i class="fab fa-git-square red-text fa-4x"></i> 
+                      </div>
+          <div class="col-10 col-md-9 col-lg-10 float-right">
+              <h4 class="font-weight-bold">Git</h4>
+              <p class="grey-text">CSS (acronym in English for C ascading S tyle S heets),
+                "Cascading Style Sheets", is a graphic design language to define and create the presentation
+                of a structured document written in a markup language . </p>
+              <a mdbBtn color="primary" size="sm" class="ml-0 waves-light" href="https://github.com/" target="_blank" mdbWavesEffect>Learn more</a>
+          </div>
+      </div>
+      
+     
+
+      <h2 class="h1 font-bold light-blue-text my-5">Diseño UI-UX</h2>
+  
+
+
+      <img src="assets/img/imagen2.jpg" class="img-fluid" alt="Sample image with waves effect.">
+      <a>
+        <div class="mask waves-effect waves-light rgba-white-slight" mdbWavesEffect></div>
+      </a>
+
+    </div>
+  </div>
+  
+    </section>
+
+    
+
+    
+ 
+
+      
+          
+      <!--parallax 2  -->
+      <!-- <div class="view intro" style="background-image: url(assets/img/img1.jpg); background-attachment: fixed; min-height: 700px">
+        <div class="full-bg-img mask rgba-purple-slight">
+            <div class="container">
+                <div class="d-flex align-items-center d-flex justify-content-center" style="height: 700px">
+                    <div class="row mt-5">
+                        <div class="col-md-12 wow fadeIn mb-3">
+                            <div class="intro-info-content text-center">
+                      
+                                <a mdbBtn color="pink" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s">Read more</a>
+      
+      
+                                <h2 class="h1 display-1 white-text mb-2 wow fadeInDown" data-wow-delay="0.3s">Portafolio Welcome on my page!</h2>
+                                <h4 class="mb-3 mt-1 white-text font-bold wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet</h4>
+                                <a mdbBtn color="pink" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s">Read more</a>
+                                <a mdbBtn color="pink" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div> -->
+      
+      
+
+
+
+    </body>
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <mdb-icon fab icon="facebook" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+                <mdb-icon fab icon="twitter" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+                <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+                <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+                <mdb-icon fab icon="instagram" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+                <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+    
