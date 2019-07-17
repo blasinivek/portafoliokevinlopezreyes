@@ -4,9 +4,11 @@
     position:center;
     padding-top:0%;
     overflow:hidden;
-    height: 820px;
-    width :100%;
+    /* height: 820px; */
+    /* width :100%; */
     padding-top:2%;
+    max-width: 100%;
+    height:820px;
     }
 
 .body{
@@ -49,6 +51,26 @@
 
 }
 
+.carousel{
+    max-height: 20%;
+    width :100%;
+    padding-right:30px;
+    padding-left:30px;
+
+}
+
+.img-fluid{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+
+.footer{
+    height: 100%;
+    width :100%;
+}
 
 
 
